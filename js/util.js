@@ -213,7 +213,7 @@ export const util = (() => {
       //   .remove();
     }
 
-    AOS.init();
+    // AOS.init();
 
     // countDownDate();
     // opacity("welcome", 0.025);
