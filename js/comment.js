@@ -103,7 +103,7 @@ export const comment = (() => {
     const id = button.getAttribute("data-uuid");
 
     const name = document.getElementById("form-name");
-    const acompaniantes = document.getElementById("form-name");
+    const acompaniantes = document.getElementById("form-comment");
     if (name.value.length == 0) {
       alert("Por favor ingresa un nombre");
       return;
