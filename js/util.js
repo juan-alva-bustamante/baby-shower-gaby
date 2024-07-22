@@ -206,17 +206,21 @@ export const util = (() => {
 
     const token = document.querySelector("body").getAttribute("data-key");
     if (!token || token.length === 0) {
-      document.getElementById("ucapan").remove();
-      document
-        .querySelector('a.nav-link[href="#ucapan"]')
-        .closest("li.nav-item")
-        .remove();
+      // document.getElementById("ucapan").remove();
+      // document
+      //   .querySelector('a.nav-link[href="#ucapan"]')
+      //   .closest("li.nav-item")
+      //   .remove();
     }
 
     AOS.init();
 
-    countDownDate();
-    opacity("welcome", 0.025);
+    // countDownDate();
+    // opacity("welcome", 0.025);
+
+    const element = document.getElementById("welcome");
+    element.style.opacity = 0;
+    element.remove();
 
     audio.play();
     audio.showButton();
@@ -224,6 +228,7 @@ export const util = (() => {
     theme.check();
     theme.showButtonChangeTheme();
 
+    animation();
     if (!token || token.length === 0) {
       return;
     }
